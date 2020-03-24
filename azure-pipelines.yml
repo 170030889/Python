@@ -39,7 +39,7 @@ versionSpec: '$(python.version)'
 displayName: 'Use Python $(python.version)'
 
 
-- script: python "give the python file name.py"
+- script: python "sum.py"
 
 
 
