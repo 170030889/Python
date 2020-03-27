@@ -1,6 +1,6 @@
-a = int(input("enter first number: "))
-b = int(input("enter second number: "))
- 
+a = 6
+b = 4
+
 sum = a + b
  
 print("sum:", sum)
