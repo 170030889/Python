@@ -8,19 +8,19 @@ trigger:
 pool:
 
 
-vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest'
 
 
 strategy:
 
 
-matrix:
+  matrix:
 
 
-Python27:
+    Python27:
 
 
-python.version: '2.7'
+      python.version: '2.7'
 
 
 
@@ -30,13 +30,13 @@ steps:
 - task: UsePythonVersion@0
 
 
-inputs:
+  inputs:
 
 
-versionSpec: '$(python.version)'
+    versionSpec: '$(python.version)'
 
 
-displayName: 'Use Python $(python.version)'
+  displayName: 'Use Python $(python.version)'
 
 
 - script: python "sum.py"
@@ -46,16 +46,16 @@ displayName: 'Use Python $(python.version)'
 - task: PythonScript@0
 
 
-inputs:
+  inputs:
 
 
-scriptSource: 'inline'
+    scriptSource: 'inline'
 
 
-script: |
+    script: |
 
 
-print('Hello world 1')
+      print('Hello world 1')
 
 
-print('Hello world 2')
+      print('Hello world 2')
